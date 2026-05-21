@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="header">
+
+        <h2>Video Dashboard</h2>
+
+        <button class="logout-btn" id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+    <div class="player-wrapper" id="playerContainer">
+
+        <video id="player" controls playsinline>
+            <source src="">
+        </video>
+
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+
+        <div class="empty">
+            Loading...
+        </div>
+
+    </div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+<script>
+
+initDashboardPage()
+
+</script>
+
+</body>
+</html>
